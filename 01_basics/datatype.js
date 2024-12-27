@@ -5,7 +5,7 @@
 console.log(3
     +
     3
-) // do not write code like this as it is not a good practice for writing code and kind of bad readability.
+) // do not write code like this as it is not a good practice for writing code reason(readability of code is bad).
 
 //prefer to write like this below written code
 console.log(3+2)
@@ -34,9 +34,9 @@ console.table([name,age,pi,isLoggedIn,state,x]);
 /*
 Non-Primitive (Reference) Data Types
 
-Non-primitive types are mutable and stored in the heap.
+Non-primitive types are mutable and stored in the heap(dynamic memory allocation).
 Data Type	              Description	Example
-Object	  ->    Represents a collection of key-value pairs. Includes arrays and functions.	{ name: "John" }
+Object(like python dictonary)	  ->    Represents a collection of key-value pairs. Includes arrays and functions.{ name: "John"}
 Array	  ->    A special type of object for storing ordered collections.	[1, 2, 3]
 Function  ->	A callable object that contains executable code.	function greet() {}
 Date	  ->    An object for handling dates and times.	new Date()
