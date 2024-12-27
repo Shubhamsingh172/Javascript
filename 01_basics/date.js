@@ -1,5 +1,8 @@
+//In JavaScript, Date is a built-in object used for working with dates and times. It provides methods for creating, 
+// manipulating, and formatting dates.
+
 let myDate = new Date()
-console.log(myDate); // it gives output like this 2024-12-25T20:35:09.856Z
+console.log(myDate); // it gives output like this current date 2024-12-25T20:35:09.856Z
 console.log(myDate.toString()); //Wed Dec 25 2024 20:36:33 GMT+0000 (Coordinated Universal Time)
 /*
 localeString typically refers to a string formatted according to the conventions of a particular locale.
@@ -14,7 +17,7 @@ console.log(typeof(myDate)); //it is an type of object
 // console.log(myCreateDate.toLocaleDateString()); //3/17/2004 if only date use localeDateString
 // console.log(myCreateDate.toLocaleString()); //3/17/2004, 12:00:00 AM if want all things use string
 
-// let myCreateDate = new Date(2004, 2, 17, 5, 3)
+// let myCreateDate = new Date(2004, 2, 17, 5, 3) here 5 and 3 are 5 hours 3 minutes
 // console.log(myCreateDate.toString()); //Wed Mar 17 2004 05:03:00 GMT+0000 (Coordinated Universal Time)
 // console.log(myCreateDate.toLocaleDateString()); // 3/17/2004
 // console.log(myCreateDate.toLocaleString("en-IN")); //17/3/2004, 5:03:00 am
@@ -39,13 +42,13 @@ console.log(Math.floor(Date.now()/1000)); //in seconds 1735160527
 
 let newDate = new Date();
 console.log(newDate); //2024-12-25T21:07:37.924Z
-console.log(newDate.toLocaleDateString());
+console.log(newDate.toLocaleDateString()); //12/25/2024
 console.log(newDate.toLocaleString()); //12/25/2024, 9:08:52 PM
 console.log(newDate.toLocaleTimeString()); //9:08:52 PM
-console.log(newDate.getMonth());
-console.log(newDate.getDay());
+console.log(newDate.getMonth()); //11
+console.log(newDate.getDay()); //3 it returns the day index
 
-//we can also have output like this `${newDate.getDay()} and the time `
+//we can also have output like this `${newDate.getDay()} and the time ` it means like python format string
 
 
 console.log(newDate.toLocaleString('default', {
