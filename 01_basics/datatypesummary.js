@@ -1,18 +1,23 @@
 //javascript is a dynamic typed language
 
 //primitive data type
-// 7 types(Call by value) = String, Number, Boolean, null(empty), undefined(not known), Symbol(used to make the value as unique), BigInt
+// 7 types(Call by value) = String, Number, Boolean, null(empty), undefined(not known), Symbol(used to make the value as unique),
+//  BigInt
 
 const score = 100
+console.log(score);
 const scoreValue = 100.3
+console.log(scoreValue);
 
 const isLoggedIn = true;
 const outsideTemp = null
-let userEmail; //undefined
+let userEmail; //undefined it is declared but not initialized
 
 const id = Symbol('123') //Returns a new unique Symbol value.
+console.log(id);
 const anotherId = Symbol('123')
-console.log(id === anotherId)
+console.log(anotherId);
+console.log(id === anotherId) // as it returns new symbol every time there two symbols can be different that's why it returns false
 
 const num = 123456789654788999; // big int;
 console.log(num)
@@ -37,3 +42,9 @@ const myfunction = function() {
     console.log("Function aa gya bhai use karna javascript me.");
 }
 myfunction() // now i know how to use function in javascript it same like python return type of function is undefined
+
+greet = function() // 
+{
+    console.log("Hello, Good Morning");
+}
+greet();
