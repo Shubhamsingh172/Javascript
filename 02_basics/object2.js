@@ -100,7 +100,43 @@ console.log(Object.entries(tinderUser));
 //also we can check the property validation of object
 console.log(tinderUser.hasOwnProperty('isLoggedIn')); // true
 
+//object de- structuring
 
+const course = {
+    courseName : "Javascript course",
+    price: 999,
+    courseInstructor: "shubham"
+}
 
+// course.courseInstructor
+//   --> instead of calling object like this we can use object de-structure by using we can call object directly by their name 
 
+// const {courseInstructor } = course
+// console.log(courseInstructor); // shubham as output as we call directly by their defined name 
+
+// we can also have our own name of the object to call
+
+const {courseInstructor : instructor } = course
+console.log(instructor); // shubham as output by our own defined name
+
+// api info
+/*
+in oldent times api produces the value in xml structures but nowdays it is in json format 
+json is nothing but look likes an object without having name in which all keys and values are written in string format 
+number will come as it is as values and true false rest of all are in string format
+  */
+
+//example
+// {
+//     "courseName" : "java script",
+//     "coursePrice" : "999",
+//     "price" : "free"
+// }
+
+//we can also have api inside the array inside which there is collection of object like below
+[
+    {},
+    {},
+    {}
+]
 
